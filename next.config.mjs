@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 // Bei einem Build über GitHub Actions setzen wir die Repo-URL als Basis,
-// damit Assets unter /fruit-website/* geladen werden. Lokal (dev/build)
-// bleibt die App ohne basePath erreichbar.
+// damit Assets unter /ranked-choice-voting/* geladen werden. Lokal
+// (dev/build) bleibt die App ohne basePath erreichbar.
 const isPagesBuild = process.env.GITHUB_PAGES === "true";
-const repoBasePath = isPagesBuild ? "/fruit-website" : "";
+const repoBasePath = isPagesBuild ? "/ranked-choice-voting" : "";
 
 const nextConfig = {
   reactStrictMode: true,
